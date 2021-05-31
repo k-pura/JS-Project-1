@@ -1,11 +1,14 @@
 body {
-    font-family: 'Press-Start-P2', 'Verdana';
+    font-family: 'Press Start 2P', cursive;
+    background: url(streetfighter9.jpg);
 }
 
 h1 {
     text-align: center;
+    font-size: 45px;
+    letter-spacing: 15px;
 }
 
-#fight {
-    text-align: center;
+h3 {
+    font-size: 20px;
 }
