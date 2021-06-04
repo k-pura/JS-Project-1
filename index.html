@@ -7,18 +7,91 @@
     <title>War</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Audiowide&family=IBM+Plex+Mono:wght@400;500&family=Mate+SC&family=Michroma&family=Nixie+One&family=Orbitron:wght@500&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card-deck-css/css/cardstarter.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
     </head>
 <body>
-    <h1>~StreetWar~</h1>
-    <button id = "fight">FIGHT!</button>
-    <h3 id = "play1">Fighter 1</h3>
-    <h3 id = "play2">Fighter 2</h3>
-    <h3 id = "play1Health">Fighter 1 Health</h3>
-    <h3 id = "play2Health">Fighter 2 Health</h3>
-    <button id = "restart">Restart</button>
+    <section id="background">
+        <header>
+            <h1>~StreetWar~</h1>
+        </header>
 
+        <div class="btn">
+            <div></div>
+            <button id="fight">FIGHT!</button>
+            <div></div>
+        </div>
+        
+        <div id="players">
+            <h3 id="play1">Fighter 1</h3>
+            <h3 id="play2">Fighter 2</h3>
+        </div>
+        <section id="cards">
+            <div class="card back-ryu"></div>
+            <div id="player1Flip" class=""></div>
+            <div id="gif"></div>
+            <div id="player2Flip" class=""></div>
+            <div class="card back-chunli"></div>
+        </section>
 
+        <footer>
+            <div id="healthBars">
+                <h3 id="play1Health">Fighter 1 Health</h3>
+                <h3 id="play2Health">Fighter 2 Health</h3>
+            </div>
+            
+            <div class="bothHealthBars">
+                <section id="play1HealthBar">    
+                    <progress id="healthPlay1" value="2" max="2"></progress>
+                </section>
+                
+                <section id="play2HealthBar">
+                    <progress id="healthPlay2" value="2" max="2"></progress>
+                </section>
+            </div>        
+            <div class="btn">
+                <button id="info">?</button>
+                <button id="restart">Restart</button>
+                <button id="music">Music On/Off</button>
+            </div> 
+
+            <div id="winModal" class="modal">
+                <div class="winModal-content">
+                    <span class="close">&times;</span>
+                    <img class="modal-content"  id="winImg" src="" style="width:100%;max-width:300px" >
+                    <p>YOU WIN!</p>
+                </div>
+            </div>
+            
+            <div id="loseModal" class="modal">
+                <div class="loseModal-content">
+                    <span class="close2">&times;</span>
+                    <img class="modal-content" id="loseImg" src="" style="width:100%;max-width:300px">
+                    <p>K.O.</p>
+                </div>
+            </div>
+
+            <div id="infoM" class="modal">
+                <div class="info-content">
+                    <span class="close3">&times;</span>
+                    <p>
+                        <ul>
+                            <h2>How to Play:</h2>
+                                    <p></p>
+                                    <p>Press Fight until your cards match.</p>
+                                    <p></p>
+                                    <p>Press the Gif to play your next card.</p>
+                                    <p></p>
+                                    <p>Repeat until you win or lose.</p>
+                                    <p></p>                               
+                            <h3>For a fun variation, take a shot every time you lose health!</h3>
+                            <h3>Make it a game for two! Pick a character and drink a shot when your character loses health!</h></h3>
+                        </ul>    
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

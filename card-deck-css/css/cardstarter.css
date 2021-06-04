@@ -3,16 +3,15 @@
   box-sizing: border-box;
   display: inline-block;
   margin: 5px 5px 50px 5px;
-  cursor: pointer;
   /* Set the card's dimensions, and size it relative to
      it's font size. */
   font-size: inherit;
   width: 4.0em;
   height: 5.5em;
   /* Add a default background color and border. */
-  background-color: #fff;
   border-radius: 0.20em;
-  border: 1px solid #c3c3c3;
+  border: 1px solid rgb(13, 136, 185);
+  background-color: rgba(82, 185, 226, 0.7);
   /* Scale and set the background settings. */
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,22 +41,22 @@
     border: 0.15em dashed #daa520; }
 
 .card.diamonds.A,
-.card.dA,
+.card.ddA,
 .card.♦A {
   background-image: url("../images/diamonds/diamonds-A.svg"); }
 
 .card.diamonds.K,
-.card.dK,
+.card.ddK,
 .card.♦K {
   background-image: url("../images/diamonds/diamonds-K.svg"); }
 
 .card.diamonds.Q,
-.card.dQ,
+.card.ddQ,
 .card.♦Q {
   background-image: url("../images/diamonds/diamonds-Q.svg"); }
 
 .card.diamonds.J,
-.card.dJ,
+.card.ddJ,
 .card.♦J {
   background-image: url("../images/diamonds/diamonds-J.svg"); }
 
@@ -107,22 +106,22 @@
   background-image: url("../images/diamonds/diamonds-r02.svg"); }
 
 .card.hearts.A,
-.card.hA,
+.card.hhA,
 .card.♥A {
   background-image: url("../images/hearts/hearts-A.svg"); }
 
 .card.hearts.K,
-.card.hK,
+.card.hhK,
 .card.♥K {
   background-image: url("../images/hearts/hearts-K.svg"); }
 
 .card.hearts.Q,
-.card.hQ,
+.card.hhQ,
 .card.♥Q {
   background-image: url("../images/hearts/hearts-Q.svg"); }
 
 .card.hearts.J,
-.card.hJ,
+.card.hhJ,
 .card.♥J {
   background-image: url("../images/hearts/hearts-J.svg"); }
 
@@ -172,22 +171,22 @@
   background-image: url("../images/hearts/hearts-r02.svg"); }
 
 .card.spades.A,
-.card.sA,
+.card.ssA,
 .card.♠A {
   background-image: url("../images/spades/spades-A.svg"); }
 
 .card.spades.K,
-.card.sK,
+.card.ssK,
 .card.♠K {
   background-image: url("../images/spades/spades-K.svg"); }
 
 .card.spades.Q,
-.card.sQ,
+.card.ssQ,
 .card.♠Q {
   background-image: url("../images/spades/spades-Q.svg"); }
 
 .card.spades.J,
-.card.sJ,
+.card.ssJ,
 .card.♠J {
   background-image: url("../images/spades/spades-J.svg"); }
 
@@ -237,22 +236,22 @@
   background-image: url("../images/spades/spades-r02.svg"); }
 
 .card.clubs.A,
-.card.cA,
+.card.ccA,
 .card.♣A {
   background-image: url("../images/clubs/clubs-A.svg"); }
 
 .card.clubs.K,
-.card.cK,
+.card.ccK,
 .card.♣K {
   background-image: url("../images/clubs/clubs-K.svg"); }
 
 .card.clubs.Q,
-.card.cQ,
+.card.ccQ,
 .card.♣Q {
   background-image: url("../images/clubs/clubs-Q.svg"); }
 
 .card.clubs.J,
-.card.cJ,
+.card.ccJ,
 .card.♣J {
   background-image: url("../images/clubs/clubs-J.svg"); }
 
@@ -319,6 +318,15 @@
 .card.back-red {
   background-image: url("../images/backs/red.svg"); }
 
+.card.back-chunli {
+  background-image: url('../../CardBack/chunli.png');
+  background-size: 200%;
+}
+
+.card.back-ryu {
+  background-image: url('../../CardBack/Ryu.png');
+  background-size: 200%;
+}
 /* Re-orients the cards for different directions. While
    they are symmetric, it's still important to orient
    them correctly in case text or other symbols are
