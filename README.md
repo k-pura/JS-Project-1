@@ -6,6 +6,12 @@ The goal of this game is to get your opponent's health bar value to zero. To pla
 
 ## Screenshots of Game
 
+<img src="ReadMeImages/startscreen.PNG">
+
+<img src="ReadMeImages/warScreen.PNG">
+
+<img src="ReadMeImages/endScreen.PNG">
+
 ## Technologies Used
 
 * HTML
